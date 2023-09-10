@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Way --- Brilworx</title>
+    <link rel="stylesheet" href="../styles/global-styles.css">
+    <link rel="shortcut icon" href="../assets/global-images/header-images/favicon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../src/the-way-page-logic/the-way-page.js" defer></script>
+    <script src="../src/global-logic/header.js" defer></script>
+    <script src="../src/modal-logic/modal.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="jdheader" id="header">
+        <div class="jdheadercontainer">
+            <a href="./main-page.html"><img class="jdnavbarlogo" id="header-logo"
+                    src="../assets/global-images/header-images/navbar-logo.svg" alt="" />
+            </a>
+            <nav class="jdnavbar">
+                <a href="./the-way-page.html">The Way</a>
+                <a href="./the-why-page.html">The Why</a>
+                <a href="./the-us-page.html">The Us</a>
+                <a href="#" id="openModalLink">The How</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content of the page -->
+
+    <main>
+
+        <!-- Modal -->
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="close-background" id="closeModalBtn">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="form-description">
+                    <h1>CONTACT US</h1>
+                    <h5>Stop blending in with the crowd and start leaving your mark on the web.</h5>
+                    <div class="required-flex">
+                        <p>Required field</p>
+                        <img width="16px" height="16px" src="../assets/modal-images/required-icon.svg" alt="">
+                    </div>
+                    <img src="../assets/modal-images/modal-img.png" alt="">
+                </div>
+                <div class="center-position" id="thankMsg">
+                    <p class="thankMsg">THANK YOU! YOUR MESSAGE HAS BEEN RECEIVED!</p>
+                </div>
+                <form class="modalForm" id="modalForm">
+                    <div class="label-items">
+                        <label for="name">NAME <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt=""></label>
+
+                    </div>
+                    <input type="text" id="name" name="name" required>
+                    <div class="label-items">
+                        <label for="email">EMAIL <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt="">
+                        </label>
+                    </div>
+                    <input type="email" id="email" name="email" required>
+                    <div class="label-items">
+                        <label for="company">COMPANY</label>
+                    </div>
+                    <input type="text" id="company" name="company">
+                    <div class="label-items">
+                        <label for="phone">PHONE NUMBER</label>
+                    </div>
+                    <input type="tel" id="phone" name="phone">
+                    <div class="label-items">
+                        <label for="message">MESSAGE <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt=""></label>
+                    </div>
+                    <textarea name="message" id="" placeholder="Your message here"></textarea>
+                    <button id="submitBtn" type="submit">SUBMIT MESSAGE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- The introduction section -->
+
+        <section class="intro__section__wrapper yellow__section">
+            <div class="intro__section">
+                <div class="intro__section__left__container">
+                    <h6>WE LIVE IN A DIGITAL WORLD</h6>
+                    <h1 class="title__animation" id="title__animation">ONLINE PRESENCE IS ESSENTIAL</h1>
+                </div>
+                <div class="intro__section__right__container">
+                    <h6>AUTHENTICITY</h6>
+                    <p>Interactions between customers and brands must be authentic, part of a dialogue and
+                        interconnected.
+                    </p>
+                    <h6>ENGAGE</h6>
+                    <p>Websites need be engaging to hold the users’ attention and for them to want to dig a little
+                        deeper.
+                    </p>
+                    <h6>IDEAS</h6>
+                    <p>Whether you’re starting from scratch or looking for a refresh, our job is to create your idea.
+                        You
+                        tell us what you like and what you don’t like, we’ll do the rest.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web design section -->
+
+        <section class="web__design__section gray__section">
+            <div class="align__content__sections">
+                <div class="align__content__sections__image__wrapper">
+                    <img class="transform__animation__design" src="../assets/the-way-page/images/web-design-picture.svg"
+                        alt="design-pc picture">
+                </div>
+                <div class="web__design__section__description__content">
+                    <h2>WEB DESIGN</h2>
+                    <h5>The key to a good website is design.</h5>
+                    <p>Having a slick user experience and cutting edge design can present your company as the best in
+                        the
+                        business. Often referred to as front end development, this is what your visitors see first so it
+                        is
+                        crucial to get it right and make an impact. First impressions matter.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Web development section -->
+
+        <section class="web__development__section blue__section">
+            <div class="align__content__sections">
+                <div class="align__content__sections__image__wrapper">
+                    <img class="transform__animation__development"
+                        src="../assets/the-way-page/images/web-development-picture.svg" alt="dev-pc picture">
+                </div>
+                <div class="web__design__section__description__content">
+                    <h2>WEB DEVELOPMENT</h2>
+                    <h5>Web development is the building blocks that make your web design work.</h5>
+                    <p>Creating a website that functions is one thing but creating one that is flexible, secure and
+                        innovative
+                        is another. Back end development is what supports the design and makes it tick.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile responsive section -->
+
+        <section class="mobile__responsive__section gray__section">
+            <div class="align__content__sections">
+                <div class="align__content__sections__image__wrapper">
+                    <img class="transform__animation__mobile"
+                        src="../assets/the-way-page/images/mobile-responsive-picture.svg" alt="deivces picture">
+                </div>
+                <div class="web__design__section__description__content">
+                    <h2>MOBILE RESPONSIVE</h2>
+                    <h5>Websites that adapt to any device.</h5>
+                    <p>With changes in technology it is important to have a website that is dynamic and responsive to
+                        any
+                        devices it is used on. In recent years, smart phones have become the most popular way for people
+                        to
+                        access the web so we will ensure your website is mobile responsive to reach the widest target
+                        audience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Domain search section -->
+
+        <section class="domain__search__section blue__section">
+            <div class="align__content__sections">
+                <div class="align__content__sections__image__wrapper">
+                    <img class="hover__research__gif" id="hover__research__gif"
+                        style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);"
+                        src="https://media.tenor.com/MDu6EODl4W4AAAAM/research.gif">
+                    <img id="domain__search__image" src="../assets/the-way-page/images/domain-research-picture.svg"
+                        alt="research-www picture">
+                </div>
+                <div class="web__design__section__description__content">
+                    <h2>DOMAIN SEARCH & REGISTRATION</h2>
+                    <h5>We will work with you to find a domain to fit your business and even help you register it.</h5>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work section -->
+
+        <section class="yellow__section">
+            <div class="work__section">
+                <h2 class="hover-element">WORK</h2>
+                <div class="work__section__image__content">
+                    <a href="" class="work__section__image__content__item">
+                        <img src="../assets/the-way-page/images/work-section-images/first-image.jpg" alt="first pic">
+                        <h5>ACUNOV</h5>
+                    </a>
+                    <a href="" class="work__section__image__content__item">
+                        <img src="../assets/the-way-page/images/work-section-images/second-image.jpg" alt="second pic">
+                        <h5>KREE8 BRANDING</h5>
+                    </a>
+                    <a href="" class="work__section__image__content__item">
+                        <img src="../assets/the-way-page/images/work-section-images/third-image.jpg" alt="third pic">
+                        <h5>REACH87</h5>
+                    </a>
+                    <a href="" class="work__section__image__content__item">
+                        <img src="../assets/the-way-page/images/work-section-images/forth-image.jpg" alt="forth pic">
+                        <h5>STRIDE ALLEY</h5>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer for all pages -->
+
+    <footer class="footer__all__pages">
+        <div class="footer__container">
+            <div class="logo__container">
+                <img src="../assets/global-images/footer-images/logo.svg" alt="logo icon">
+            </div>
+            <ul class="footer__links__list first__list">
+                <li><a href="">About us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+
+            </ul>
+            <ul class="footer__links__list second__list">
+                <li><a href="">0800 534 5181</a></li>
+                <li><a href="">info@brilworx.com</a></li>
+            </ul>
+
+            <ul class="footer__info__details__list">
+                <li>Company Reg</li>
+                <li>10663197</li>
+                <li>VAT Reg</li>
+                <li>264115131</li>
+            </ul>
+            <div class="footer__headings__and__social__media">
+                <h3>FOLLOW US</h3>
+                <p>Don't forget to follow our news, updates and activities.</p>
+                <div class="footer__social__media__links__list">
+                    <button class="social-media-btn btn__facebook">
+                        <a href="https://www.facebook.com/brilworx" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__twitter">
+                        <a href="https://twitter.com/brilworx">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__youtube">
+                        <a href="https://www.youtube.com/channel/UCGOYvOrsGLL0nTBzD0mIyGQ" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__google">
+                        <a href="https://plus.google.com/115438248577066943403" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__instagram">
+                        <a href="https://www.instagram.com/brilworx/?hl=en" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__linkedin">
+                        <a href="https://www.linkedin.com/company-beta/17996945/" target="_blank">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

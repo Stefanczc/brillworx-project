@@ -1,0 +1,111 @@
+.align__content__sections {
+  display: flex;
+  margin: 0 auto;
+  max-width: 70rem;
+  width: 90%;
+  padding: 160px 32px 128px 32px;
+}
+.align__content__sections__image__wrapper {
+  float: left;
+  min-width: 23%;
+  margin-right: 50px;
+  position: relative;
+}
+.align__content__sections__image__wrapper > img {
+  width: 100%;
+  transition-duration: 2s;
+  cursor: grab;
+}
+.transform__animation__development:hover {
+  transform: translate(-50em);
+}
+.transform__animation__mobile:hover {
+  transform: rotate(-90deg);
+}
+.transform__animation__design:hover {
+  transform: skew(10deg, 20deg);
+  background: linear-gradient(to top, var(--light-blue), var(--yellow));
+}
+.hover__research__gif {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 8px;
+}
+.hover__research__gif:hover {
+  visibility: visible;
+}
+
+.web__design__section__description__content {
+  max-width: 760px;
+}
+.web__design__section__description__content > h2 {
+  font-size: 4.236rem;
+}
+.web__design__section__description__content > h5 {
+  font-size: 1.618rem;
+  line-height: 1.5em;
+  font-family: OpenSans-light;
+  margin-bottom: 80px;
+}
+.web__design__section__description__content > p {
+  font-size: 1rem;
+  line-height: 1.5em;
+  font-family: OpenSans-regular;
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+
+@media only screen and (max-width: 990px) {
+  .align__content__sections {
+    width: auto;
+    margin: 0 2rem;
+    padding: 80px 32px 64px 32px;
+  }
+  .web__design__section__description__content > h2 {
+    font-size: 3.659em;
+    line-height: 1.1em;
+  }
+  .align__content__sections__image__wrapper {
+    margin-right: 32px;
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .align__content__sections {
+    display: flex;
+    margin: 0 auto;
+    max-width: 70rem;
+    width: 100%;
+    padding: 80px 16px 64px 16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .align__content__sections__image__wrapper {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .web__design__section__description__content > h2 {
+    font-size: 2.618em;
+    line-height: 1.1em;
+  }
+  .web__design__section__description__content > h5 {
+    font-size: 1.398rem;
+    line-height: 1.3em;
+    margin-bottom: 32px;
+    letter-spacing: 0.02em;
+  }
+}
+@media only screen and (max-width: 478px) {
+  .align__content__sections {
+    padding: 48px 16px 32px 16px;
+  }
+  .web__design__section__description__content > h2 {
+    font-size: 2.262rem;
+  }
+  .web__design__section__description__content > h5 {
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-family: OpenSans-light;
+  }
+}

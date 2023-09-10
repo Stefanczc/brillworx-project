@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Us --- Brilworx</title>
+    <link rel="stylesheet" href="../styles/global-styles.css">
+    <link rel="shortcut icon" href="../assets/global-images/header-images/favicon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../src/global-logic/header.js" defer></script>
+    <script src="../src/modal-logic/modal.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="jdheader">
+        <div class="jdheadercontainer">
+            <a href="./main-page.html"><img class="jdnavbarlogo" id="header-logo"
+                    src="../assets/global-images/header-images/navbar-logo.svg" alt="" />
+            </a>
+            <nav class="jdnavbar">
+                <a href="./the-way-page.html">The Way</a>
+                <a href="./the-why-page.html">The Why</a>
+                <a href="./the-us-page.html">The Us</a>
+                <a href="#" id="openModalLink">The How</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Modal -->
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="close-background" id="closeModalBtn">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="form-description">
+                    <h1>CONTACT US</h1>
+                    <h5>Stop blending in with the crowd and start leaving your mark on the web.</h5>
+                    <div class="required-flex">
+                        <p>Required field</p>
+                        <img width="16px" height="16px" src="../assets/modal-images/required-icon.svg" alt="">
+                    </div>
+                    <img src="../assets/modal-images/modal-img.png" alt="">
+                </div>
+                <div class="center-position" id="thankMsg">
+                    <p class="thankMsg">THANK YOU! YOUR MESSAGE HAS BEEN RECEIVED!</p>
+                </div>
+                <form class="modalForm" id="modalForm">
+                    <div class="label-items">
+                        <label for="name">NAME <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt=""></label>
+
+                    </div>
+                    <input type="text" id="name" name="name" required>
+                    <div class="label-items">
+                        <label for="email">EMAIL <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt="">
+                        </label>
+                    </div>
+                    <input type="email" id="email" name="email" required>
+                    <div class="label-items">
+                        <label for="company">COMPANY</label>
+                    </div>
+                    <input type="text" id="company" name="company">
+                    <div class="label-items">
+                        <label for="phone">PHONE NUMBER</label>
+                    </div>
+                    <input type="tel" id="phone" name="phone">
+                    <div class="label-items">
+                        <label for="message">MESSAGE <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt=""></label>
+                    </div>
+                    <textarea name="message" id="" placeholder="Your message here"></textarea>
+                    <button id="submitBtn" type="submit">SUBMIT MESSAGE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- The introduction section -->
+
+        <section class="intro__section__wrapper yellow__section">
+            <div class="intro__section">
+                <div class="intro__section__left__container">
+                    <h6>HERE AT BRILWORX</h6>
+                    <h1 class="title__animation" id="title__animation">WE'RE ALL ABOUT EXPERIENCE</h1>
+                </div>
+                <div class="intro__section__right__container">
+                    <h6>WE CRAFT</h6>
+                    <p>We craft versatile, interesting and functional websites that make it easy for users to navigate
+                        and interact with.
+                    </p>
+                    <h6>WE TRANSFORM</h6>
+                    <p>It’s about creating an online experience that transforms users into followers, customers into
+                        ambassadors.
+                    </p>
+                    <h6>WE LISTEN</h6>
+                    <p>We do this by listening to you so we understand your customers and your business goals to build a
+                        compelling website to showcase your business.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-aim__section__wrapper blue__section">
+            <div class="our-aim__section">
+                <h2>OUR AIM</h2>
+                <h5>We’re passionate about giving you the best results to make your vision a reality. By providing great
+                    support and applying our focus, we are a company who can and we can for you. We believe in educating
+                    our customers so we write articles to improve their knowledge about the power of the web. You can
+                    find our articles here.
+                </h5>
+                <div class="aims__container">
+                    <div class="aim__container">
+                        <img src="../assets/the-us-page/images/heart.svg" alt="heart icon">
+                        <h6>PASSION</h6>
+                        <p>It’s what we love, so it’s what we do.</p>
+                    </div>
+                    <div class="aim__container">
+                        <img src="../assets/the-us-page/images/dialogues.svg" alt="dialgues icon">
+                        <h6>DIALOGUE</h6>
+                        <p>We prefer a jargon-free approach.</p>
+                    </div>
+                    <div class="aim__container">
+                        <img src="../assets/the-us-page/images/person.svg" alt="person icon">
+                        <h6>PEOPLE</h6>
+                        <p>We have a people-focused attitude.</p>
+                    </div>
+                    <div class="aim__container">
+                        <img src="../assets/the-us-page/images/coffee.svg" alt="coffee icon">
+                        <h6>CULTURE</h6>
+                        <p>Breakfast meetings are our favourite.</p>
+                    </div>
+                    <div class="aim__container">
+                        <img src="../assets/the-us-page/images/cube.svg" alt="cube icon">
+                        <h6>ESSENCE</h6>
+                        <p>We love style, but that doesn’t mean we compromise on substance.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer for all pages -->
+
+    <footer class="footer__all__pages">
+        <div class="footer__container">
+            <div class="logo__container">
+                <img src="../assets/global-images/footer-images/logo.svg" alt="logo icon">
+            </div>
+            <ul class="footer__links__list first__list">
+                <li><a href="">About us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+
+            </ul>
+            <ul class="footer__links__list second__list">
+                <li><a href="">0800 534 5181</a></li>
+                <li><a href="">info@brilworx.com</a></li>
+            </ul>
+
+            <ul class="footer__info__details__list">
+                <li>Company Reg</li>
+                <li>10663197</li>
+                <li>VAT Reg</li>
+                <li>264115131</li>
+            </ul>
+            <div class="footer__headings__and__social__media">
+                <h3>FOLLOW US</h3>
+                <p>Don't forget to follow our news, updates and activities.</p>
+                <div class="footer__social__media__links__list">
+                    <button class="social-media-btn btn__facebook">
+                        <a href="https://www.facebook.com/brilworx" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__twitter">
+                        <a href="https://twitter.com/brilworx">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__youtube">
+                        <a href="https://www.youtube.com/channel/UCGOYvOrsGLL0nTBzD0mIyGQ" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__google">
+                        <a href="https://plus.google.com/115438248577066943403" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__instagram">
+                        <a href="https://www.instagram.com/brilworx/?hl=en" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__linkedin">
+                        <a href="https://www.linkedin.com/company-beta/17996945/" target="_blank">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

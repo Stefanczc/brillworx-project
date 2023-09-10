@@ -1,0 +1,113 @@
+.the-why-intro-section {
+  padding: 192px 0 160px 0;
+}
+
+.the-why-intro-section__wrapper {
+  max-width: 70rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.title-wrapper > h5 {
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background-color: #2d2c4c;
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  margin-bottom: 2rem;
+  font-family: OpenSans-light;
+  margin-left: 3%;
+}
+
+.the-why-intro-section__wrapper__articles__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6%;
+  margin: 0 3%;
+}
+
+.the-why-intro-section__wrapper__article__item {
+  border-radius: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 1s;
+  text-decoration: none;
+}
+
+.the-why-intro-section__wrapper__article__item:hover {
+  scale: 1.1;
+}
+
+.image-wrapper {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper > img {
+  width: 100%;
+  max-height: auto;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-bottom: 2rem;
+}
+
+.the-why-intro-section__wrapper__article__item__text__content {
+  color: #2d2c4c;
+}
+
+.the-why-intro-section__wrapper__article__item__text__content > h2 {
+  margin-bottom: 1rem;
+  font-family: Hanken-light;
+  font-size: 2.262em;
+  line-height: 1.3em;
+  letter-spacing: 0em;
+  min-height: 4em;
+}
+.the-why-intro-section__wrapper__article__item__text__content > p {
+  font-family: OpenSans-regular;
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 990px) {
+  .the-why-intro-section {
+    padding: 144px 0 112px 0;
+  }
+  .the-why-intro-section__wrapper__articles__container {
+    grid-template-columns: 1fr;
+  }
+  .title-wrapper > h5 {
+    font-size: 0.864rem;
+    line-height: 1.7em;
+  }
+  .the-why-intro-section__wrapper__article__item {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .the-why-intro-section {
+    padding: 80px 0 96px 0;
+  }
+  .title-wrapper {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 478px) {
+  .the-why-intro-section__wrapper__article__item__text__content > h2 {
+    font-size: 1.618rem;
+  }
+  .the-why-intro-section__wrapper {
+    text-align: center;
+  }
+}

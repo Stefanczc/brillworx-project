@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Guide on Converting Website</title>
+    <link rel="shortcut icon" href="../assets/global-images/header-images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/global-styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../src/global-logic/header.js" defer></script>
+    <script src="../src/modal-logic/modal.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header for all pages -->
+
+    <header class="jdheader">
+        <div class="jdheadercontainer">
+            <a href="./main-page.html"><img class="jdnavbarlogo" id="header-logo"
+                    src="../assets/global-images/header-images/navbar-logo.svg" alt="" />
+            </a>
+            <nav class="jdnavbar">
+                <a href="./the-way-page.html">The Way</a>
+                <a href="./the-why-page.html">The Why</a>
+                <a href="./the-us-page.html">The Us</a>
+                <a href="#" id="openModalLink">The How</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+
+    <main>
+
+        <!-- Modal -->
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="close-background" id="closeModalBtn">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="form-description">
+                    <h1>CONTACT US</h1>
+                    <h5>Stop blending in with the crowd and start leaving your mark on the web.</h5>
+                    <div class="required-flex">
+                        <p>Required field</p>
+                        <img width="16px" height="16px" src="../assets/modal-images/required-icon.svg" alt="">
+                    </div>
+                    <img src="../assets/modal-images/modal-img.png" alt="">
+                </div>
+                <div class="center-position" id="thankMsg">
+                    <p class="thankMsg">THANK YOU! YOUR MESSAGE HAS BEEN RECEIVED!</p>
+                </div>
+                <form class="modalForm" id="modalForm">
+                    <div class="label-items">
+                        <label for="name">NAME <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt=""></label>
+
+                    </div>
+                    <input type="text" id="name" name="name" required>
+                    <div class="label-items">
+                        <label for="email">EMAIL <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt="">
+                        </label>
+                    </div>
+                    <input type="email" id="email" name="email" required>
+                    <div class="label-items">
+                        <label for="company">COMPANY</label>
+                    </div>
+                    <input type="text" id="company" name="company">
+                    <div class="label-items">
+                        <label for="phone">PHONE NUMBER</label>
+                    </div>
+                    <input type="tel" id="phone" name="phone">
+                    <div class="label-items">
+                        <label for="message">MESSAGE <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt=""></label>
+                    </div>
+                    <textarea name="message" id="" placeholder="Your message here"></textarea>
+                    <button id="submitBtn" type="submit">SUBMIT MESSAGE</button>
+                </form>
+            </div>
+        </div>
+
+        <section class="a-guide__intro__section yellow__section">
+            <div class="intro__section__container importance__section">
+
+                <div class="intro__section__title__container importance__title__container">
+                    <h1>THE IMPORTANCE OF THE RIGHT DOMAIN</h1>
+                </div>
+
+                <div class="intro__section__description__container importance__description__section">
+                    <h5>MAY 10, 2018</h5>
+                    <p>Your domain is often your first impression so choosing the right one is crucial.
+                    </p>
+                    <p>SHARE</p>
+                    <div class="intro__section__social__container">
+                        <a href=""><img src="../assets/the-way-subpage-a-guide/images/facebook-img.png"
+                                alt="fb icon"></a>
+                        <a href=""><img src="../assets/the-way-subpage-a-guide/images/twitter-img.png"
+                                alt="twitter icon"></a>
+                        <a href=""><img src="../assets/the-way-subpage-a-guide/images/instagram-img.png"
+                                alt="instagram icon"></a>
+                        <a href=""><img src="../assets/the-way-subpage-a-guide/images/linkedin-img.png"
+                                alt="linkedin-icon"></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="a-guide-content__section gray__section">
+            <div class="a-guide-content__section__container">
+                <div class="a-guide-image__container">
+                    <img src="../assets/the-why-page/intro-section-images/user-laptop-image.jpg"
+                        alt="user-laptop picture">
+                </div>
+                <div class="text-container">
+                    <h2>ADDING CREDIBILITY</h2>
+                    <p>Having a domain name immediately creates a more professional look. If your site is published
+                        using free web hosting platforms, your domain will have a generic address such as
+                        <a href="http://www.yourplatform.co.uk/yourname.">http://www.yourplatform.co.uk/yourname.</a>
+                        This has a more amateur appearance and is not likely to
+                        inspire customer confidence and add credibility to your authority. Whether you want to encourage
+                        sales or establish yourself as an authority on a particular subject, your own domain name should
+                        be your number one priority. Domain names tend to be fairly inexpensive, so don’t be tempted to
+                        cut corners.
+                        <br><br>
+                    </p>
+                    <h2>THE POWER OF THE RIGHT EXTENSION</h2>
+                    <p>One of the first steps of choosing the right domain name is understanding the importance of
+                        domain extensions. Simply put, the extension is the ‘.co.uk’, or ‘.com’ at the end of your URL.
+                        When you start looking at the cost of domain names, you will find that there are now lots of
+                        different extensions such as .info or .biz that may be available at a cheaper cost. Although
+                        this may look like a great deal, it could have an impact on your overall site.In the last few
+                        years, the rapid growth of the internet has spawned numerous extensions, but remember that the
+                        long established .com or the regional .co.uk are what your visitors and customers will be
+                        accustomed to.If you are struggling to purchase a .co.uk it may be possible that certain other
+                        extensions may work well for your enterprise. Generally .org extensions are reserved for
+                        non-profits, but a .net may work.Of course, if you are working in a highly competitive niche,
+                        you may want to purchase all the extensions of your .com, so they can’t be snatched up by your
+                        competitors.
+                    </p>
+                    <h2>MAKING YOUR BRAND MEMORABLE</h2>
+                    <p>The best domain names are memorable. They should be easy to say in conversation and not have any
+                        strange pronunciations or spellings that make it difficult to remember. When deciding your
+                        domain name, you will need to get a good balance of spelling, pronunciation and overall length.
+                        Your potential visitors may want to quickly note down your web address or enter into a phone and
+                        a long URL will be problematic. If your domain has weird spellings, your potential visitors may
+                        easily become mixed up or confused. So try to avoid using ‘u’ instead of ‘you’ or use other
+                        slang as it can create problems. Remember that if you can’t pronounce your domain, it is not
+                        only a problem for your website, but with your overall branding. The best domain will have an
+                        immediate association for your target audience. Ideally, you want your domain to convey what you
+                        do to any potential visitor. This is sure to keep it memorable, making it easier for your brand
+                        to become easily recognised.
+                    </p>
+                    <h2>BOOSTING YOUR SEO</h2>
+                    <p>Designers and developers often keep SEO strategies and practices in mind when they are creating a
+                        new website. This will help to improve visibility when you establish your online presence. You
+                        can boost your SEO by including a keyword within your domain name.Unfortunately, when trying to
+                        choose the best domain name, it is rarely this simple. Primarily, you need to consider the
+                        relevance of a keyword. You should only include keywords if they make sense and encompass the
+                        important component of your business. You will need to consider the implications of the keyword
+                        for your business not only now, but in the coming years. While you may want to focus on one
+                        particular product, you need to think about whether you will expand your enterprise in the
+                        future. Don’t limit your potential growth with a too specific a keyword or it could impact your
+                        SEO strategy in future.
+                    </p>
+                    <h2>HELPING YOU TO STAND OUT IN A CROWD</h2>
+                    <p>Many of the biggest brands we see today started life as a unique and original name. While it is
+                        tempting to try to emulate your competition, often it can be more effective to create a
+                        completely original brand for your maximum marketing impact. For example, although it is now a
+                        household name, Google was an entirely original word back when the brand was developed. This
+                        meant that we didn’t have a concept of what the name meant, so the company could develop an
+                        image from scratch. Now Google is considered a verb and is used in everyday conversation. We
+                        don’t talk about doing internet research; we Google it.If you’re developing a new enterprise, by
+                        being completely original with your domain and overall brand, you can stand out even in the
+                        largest crowd.
+                    </p>
+                    <h2>TIPS FOR CHOOSING THE RIGHT DOMAIN</h2>
+                    <p>Choosing a new domain can be a little daunting, but there are a few tips and tricks to make the
+                        process easier. These include;</p>
+                    <h3>LIMIT HYPHENS</h3>
+                    <p>You may find that there are lots of domains on offer that feature one or two hyphens. While these
+                        may look good on paper, they can be trickier for people to remember. Many web development
+                        experts agree that you should limit the use of hyphens, avoiding them altogether if possible. It
+                        has been suggested that Google and the other major search engines don’t appreciate the use of
+                        hyphens, so using them could damage your potential search engine ranking.</p>
+                    <h3>AVOID INFRINGEMENT</h3>
+                    <p>Unless you want to get into a legal battle, you need to tread carefully and avoid infringing on
+                        another company. While you may think that you can get away with a domain name, you need to think
+                        about how it will be viewed by your competitor or a judge. If you want to avoid danger, you
+                        should discuss it with a legal professional. There is a history of trademark owners suing domain
+                        owners if it infringes on their business brand.Additionally, infringing on another company can
+                        be detrimental to your business. You may create brand confusion. Visitors on your site will get
+                        frustrated and click away if they are looking for another service that has a closely related
+                        URL. This can harm your site stats and could affect your search engine rankings.</p>
+                    <h3>CHECK SOCIAL MEDIA AND TRADEMARK AVAILABILITY</h3>
+                    <p>Your domain will be a central element of your brand, but it is not the only component. So before
+                        you make the decision to move forward with a domain name, you need to check the availability on
+                        the main social media sites and if it is already registered as a trademark.In order to have an
+                        effective brand, you will need to carry the name across your website and social media platforms.
+                        This will build familiarity and allow your customers and visitors to find you anywhere on the
+                        web. There are a number of tools available to help you to search the social media networks for
+                        your potential domain. Remember that even if you are not interested in using some of the popular
+                        social networks now, your marketing strategy may expand in the future.</p>
+                    <h3>THINK SHORT AND SWEET</h3>
+                    <p>Your new domain should be concise and simple. This will make it easy to remember and type.
+                        Remember that not all your visitors will be clicking a link. No one wants to have to type out an
+                        essay just to reach your site, so they are likely to just move on to another service provider. A
+                        short and sweet domain name will help to keep it memorable and should help you to avoid typos
+                        and confusion.</p>
+                    <h3>CONSIDER THE IMPLICATIONS</h3>
+                    <p>When choosing your domain, you need to consider what impression you will create. If you want to
+                        create an air of professionalism, cutesy names can be detrimental. While you may love fluffy
+                        kittens, if you want to be taken seriously avoid including this in your domain. You should also
+                        think about if there are any unintended implications or connotations to your domain. You don’t
+                        want to deter any potential visitors or offend anyone by accident.</p>
+                    <h3>CONSIDER TARGETING YOUR AREA</h3>
+                    <p>If you are a service provider in a local area, you could boost your marketing by targeting a
+                        specific area in your domain. This will make it easier for your local customers to both find and
+                        remember you. For example, <a
+                            href="http://www.chesterautorepair.co.uk">http://www.chesterautorepair.co.uk</a> immediately
+                        tells visitors what
+                        you do and where you do it. This can provide a massive boost in profile for bricks and mortar
+                        businesses without needing an extensive marketing strategy.</p>
+                    <h3>DON’T DELAY</h3>
+                    <p>If you do find the right domain, remember that domain names do sell fairly quickly. They are
+                        usually quite inexpensive, so if you are unsure about which one to choose from your shortlist,
+                        it may be a good idea to register more than one. While it is a good idea to do your research to
+                        ensure that you are using the right domain, it can be very frustrating if you finally decide
+                        only to find the URL has been snapped up.</p>
+                    <p>There are a number of elements that combine into the perfect domain, but it can have a massive
+                        impact on your brand. Even if you are setting up a site as a blog or a hobby site, you may be
+                        able to monetise it at a later date, so it is still worth considering the best domain. In this
+                        type of scenario, you could even use your name, to create a strong and unique brand. When you
+                        are choosing your new domain, get a little creative and remember that your domain is part of
+                        your ongoing branding strategy that may need to be adjusted at some point in the future.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="articles__section gray__section">
+            <div class="a-guide__articles__main__container">
+                <h5>RELATED POSTS</h5>
+                <div class="a-guide-wrapper__articles__container">
+                    <article class="the-why-content-section__wrapper__article__item a-guide-article-item-container">
+                        <img src="../assets/the-why-page/content-section-images/first-image.jpg" alt="keyboard picture">
+                        <h3>10 WEB DESIGN BLOGS YOU CAN'T MISS</h3>
+                        <p>Quam voluptas officia omnis hic tempora. Reiciendis sint labore. Rerum accusamus deserunt
+                            perferendis porro ut. Deleniti tenetur inventore quidem maiores. Impedit autem expedita.
+                            Eaque aut velit eveniet.
+                        </p>
+                    </article>
+                    <article class="the-why-content-section__wrapper__article__item a-guide-article-item-container">
+                        <img src="../assets/the-why-page/content-section-images/second-image.jpg"
+                            alt="keyboard picture">
+                        <h3>5 GREAT WEB DESIGN RESOURCES</h3>
+                        <p>Molestias cumque sint aperiam ab. Reiciendis sint consectetur ut ipsam qui et porro. Iure sed
+                            vitae.
+                        </p>
+                    </article>
+                    <article class="the-why-content-section__wrapper__article__item a-guide-article-item-container">
+                        <img src="../assets/the-why-page/content-section-images/third-image.jpg" alt="keyboard picture">
+                        <h3>7 WAYS TO IMPROVE WEBSITE USABILITY AND ACCESSIBILITY</h3>
+                        <p> Voluptatibus ea similique in fugiat eos. Distinctio labore voluptatem consequatur quo
+                            quaerat omnis. Tempora odio rerum illo sint quas quaerat quod. Ut nihil explicabo quia. Sit
+                            atque odit repellendus aut sint.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer for all pages -->
+
+    <footer class="footer__all__pages">
+        <div class="footer__container">
+            <div class="logo__container">
+                <img src="../assets/global-images/footer-images/logo.svg" alt="logo icon">
+            </div>
+            <ul class="footer__links__list first__list">
+                <li><a href="">About us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+
+            </ul>
+            <ul class="footer__links__list second__list">
+                <li><a href="">0800 534 5181</a></li>
+                <li><a href="">info@brilworx.com</a></li>
+            </ul>
+
+            <ul class="footer__info__details__list">
+                <li>Company Reg</li>
+                <li>10663197</li>
+                <li>VAT Reg</li>
+                <li>264115131</li>
+            </ul>
+            <div class="footer__headings__and__social__media">
+                <h3>FOLLOW US</h3>
+                <p>Don't forget to follow our news, updates and activities.</p>
+                <div class="footer__social__media__links__list">
+                    <button class="social-media-btn btn__facebook">
+                        <a href="https://www.facebook.com/brilworx" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__twitter">
+                        <a href="https://twitter.com/brilworx">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__youtube">
+                        <a href="https://www.youtube.com/channel/UCGOYvOrsGLL0nTBzD0mIyGQ" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__google">
+                        <a href="https://plus.google.com/115438248577066943403" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__instagram">
+                        <a href="https://www.instagram.com/brilworx/?hl=en" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__linkedin">
+                        <a href="https://www.linkedin.com/company-beta/17996945/" target="_blank">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

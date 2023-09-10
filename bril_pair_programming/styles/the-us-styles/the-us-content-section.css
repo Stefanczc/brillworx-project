@@ -1,0 +1,49 @@
+.our-aim__section__wrapper {
+  padding: 160px 0 128px 0;
+}
+.our-aim__section {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 32px;
+}
+.our-aim__section > h2 {
+  font-size: 4.236rem;
+}
+.our-aim__section > h5 {
+  font-size: 1.618rem;
+  font-family: OpenSans-light;
+  margin-bottom: 80px;
+}
+.aims__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  row-gap: 25px;
+}
+.aim__container {
+  padding: 0 16px;
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: 0.3s ease-in;
+  cursor: crosshair;
+}
+.aim__container:hover {
+  scale: 0.8;
+}
+.aim__container > img {
+  margin-bottom: 32px;
+}
+.aim__container > h6 {
+  color: var(--blue);
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+.aim__container > p {
+  letter-spacing: -0.01em;
+  font-size: 1rem;
+  color: var(--black);
+  margin-bottom: 2rem;
+  font-family: OpenSans-regular;
+}

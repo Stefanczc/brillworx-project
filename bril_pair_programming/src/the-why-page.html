@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Why --- Brilworx</title>
+    <link rel="stylesheet" href="../styles/global-styles.css">
+    <link rel="shortcut icon" href="../assets/global-images/header-images/favicon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../src/global-logic/header.js" defer></script>
+    <script src="../src/modal-logic/modal.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="jdheader">
+        <div class="jdheadercontainer">
+            <a href="./main-page.html"><img class="jdnavbarlogo" id="header-logo"
+                    src="../assets/global-images/header-images/navbar-logo.svg" alt="" />
+            </a>
+            <nav class="jdnavbar">
+                <a href="./the-way-page.html">The Way</a>
+                <a href="./the-why-page.html">The Why</a>
+                <a href="./the-us-page.html">The Us</a>
+                <a href="#" id="openModalLink">The How</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content of the page -->
+
+    <main>
+
+        <!-- Modal -->
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="close-background" id="closeModalBtn">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="form-description">
+                    <h1>CONTACT US</h1>
+                    <h5>Stop blending in with the crowd and start leaving your mark on the web.</h5>
+                    <div class="required-flex">
+                        <p>Required field</p>
+                        <img width="16px" height="16px" src="../assets/modal-images/required-icon.svg" alt="">
+                    </div>
+                    <img src="../assets/modal-images/modal-img.png" alt="">
+                </div>
+                <div class="center-position" id="thankMsg">
+                    <p class="thankMsg">THANK YOU! YOUR MESSAGE HAS BEEN RECEIVED!</p>
+                </div>
+                <form class="modalForm" id="modalForm">
+                    <div class="label-items">
+                        <label for="name">NAME <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt=""></label>
+
+                    </div>
+                    <input type="text" id="name" name="name" required>
+                    <div class="label-items">
+                        <label for="email">EMAIL <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt="">
+                        </label>
+                    </div>
+                    <input type="email" id="email" name="email" required>
+                    <div class="label-items">
+                        <label for="company">COMPANY</label>
+                    </div>
+                    <input type="text" id="company" name="company">
+                    <div class="label-items">
+                        <label for="phone">PHONE NUMBER</label>
+                    </div>
+                    <input type="tel" id="phone" name="phone">
+                    <div class="label-items">
+                        <label for="message">MESSAGE <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt=""></label>
+                    </div>
+                    <textarea name="message" id="" placeholder="Your message here"></textarea>
+                    <button id="submitBtn" type="submit">SUBMIT MESSAGE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Intro section -->
+
+        <section class="the-why-intro-section yellow__section">
+            <div class="the-why-intro-section__wrapper">
+                <div class="title-wrapper">
+                    <h5>LATEST BLOG POSTS</h5>
+                </div>
+                <div class="the-why-intro-section__wrapper__articles__container">
+                    <a href="./a-guide-subpage.html" class="the-why-intro-section__wrapper__article__item">
+                        <div class="image-wrapper">
+                            <img src="../assets/the-why-page/intro-section-images/keyboard-pencil-image.jpg" width="496"
+                                height="240" alt="">
+                        </div>
+                        <div class="the-why-intro-section__wrapper__article__item__text__content">
+                            <h2>A GUIDE ON CONVERTING WEBSITE VISITORS INTO CUSTOMERS</h2>
+                            <p> Attracting visitors to your site is one thing, but converting them in to a customer is
+                                another.</p>
+                        </div>
+                    </a>
+                    <a href="./importange-subpage.html" class="the-why-intro-section__wrapper__article__item">
+                        <div class="image-wrapper">
+                            <img src="../assets/the-why-page/intro-section-images/user-laptop-image.jpg" width="496"
+                                height="240" alt="">
+                        </div>
+                        <div class="the-why-intro-section__wrapper__article__item__text__content">
+                            <h2>THE IMPORTANCE OF THE RIGHT DOMAIN</h2>
+                            <p> Your domain is often your first impression so choosing the right one is crucial.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Content section -->
+
+        <section class="the-why-content-section">
+            <div class="the-why-content-section__wrapper gray__section">
+                <div class="the-why-content-section__wrapper__articles__container">
+                    <article class="the-why-content-section__wrapper__article__item">
+                        <img src="../assets/the-why-page/content-section-images/first-image.jpg" alt="keyboard picture">
+                        <h3>10 WEB DESIGN BLOGS YOU CAN'T MISS</h3>
+                        <p>Quam voluptas officia omnis hic tempora. Reiciendis sint labore. Rerum accusamus deserunt
+                            perferendis porro ut. Deleniti tenetur inventore quidem maiores. Impedit autem expedita.
+                            Eaque aut velit eveniet.
+                        </p>
+                    </article>
+                    <article class="the-why-content-section__wrapper__article__item">
+                        <img src="../assets/the-why-page/content-section-images/second-image.jpg"
+                            alt="keyboard picture">
+                        <h3>5 GREAT WEB DESIGN RESOURCES</h3>
+                        <p>Molestias cumque sint aperiam ab. Reiciendis sint consectetur ut ipsam qui et porro. Iure sed
+                            vitae.
+                        </p>
+                    </article>
+                    <article class="the-why-content-section__wrapper__article__item">
+                        <img src="../assets/the-why-page/content-section-images/third-image.jpg" alt="keyboard picture">
+                        <h3>7 WAYS TO IMPROVE WEBSITE USABILITY AND ACCESSIBILITY</h3>
+                        <p> Voluptatibus ea similique in fugiat eos. Distinctio labore voluptatem consequatur quo
+                            quaerat omnis. Tempora odio rerum illo sint quas quaerat quod. Ut nihil explicabo quia. Sit
+                            atque odit repellendus aut sint.
+                        </p>
+                    </article>
+                    <article class="the-why-content-section__wrapper__article__item">
+                        <img src="../assets/the-why-page/content-section-images/forth-image.jpg" alt="keyboard picture">
+                        <h3>WHY WE LOVE WEBFLOW (AND YOU SHOULD, TOO!)</h3>
+                        <p>Minima corporis quia voluptates nemo est necessitatibus quia. Est alias eum sint sunt. Magnam
+                            voluptates magnam pariatur omnis voluptatibus ex sunt debitis accusantium. Dolores quia
+                            tenetur.
+                        </p>
+                    </article>
+                    <article class="the-why-content-section__wrapper__article__item">
+                        <img src="../assets/the-why-page/content-section-images/fifth-image.jpg" alt="keyboard picture">
+                        <h3>HOW TO IMPROVE WEB DESIGN PROCESS</h3>
+                        <p>Corrupti itaque natus nulla nobis pariatur enim fugit. Repellendus nisi accusamus doloremque
+                            unde tempora accusamus voluptate. Quasi quia quidem sunt aut tenetur. Dignissimos aut
+                            voluptate rerum aut.
+                        </p>
+                    </article>
+                    <article class="the-why-content-section__wrapper__article__item">
+                        <img src="../assets/the-why-page/content-section-images/third-image.jpg" alt="keyboard picture">
+                        <h3>15 BEST BLOGS TO FOLLOW ABOUT WEB DESIGN</h3>
+                        <p>Eligendi provident debitis minus incidunt rerum voluptatem sint porro tenetur. Rerum alias
+                            natus vel velit natus. Hic est distinctio ad reprehenderit veritatis aliquam. Exercitationem
+                            quae earum dolorem illo.
+                        </p>
+                    </article>
+                    <article class="the-why-content-section__wrapper__article__item">
+                        <img src="../assets/the-why-page/content-section-images/seventh-image.jpg"
+                            alt="keyboard picture">
+                        <h3>THE WORST ADVICE WE'VE EVER HEARD ABOUT WEB DESIGN</h3>
+                        <p>Consectetur qui dolores ut autem enim hic aut. Natus placeat et quos dignissimos porro
+                            dolorem iure. Dignissimos quam mollitia quo quia aut sint officia. Quidem sunt perspiciatis
+                            rerum pariatur.
+                        </p>
+                    </article>
+                    <article class="the-why-content-section__wrapper__article__item">
+                        <img src="../assets/the-why-page/content-section-images/third-image.jpg" alt="keyboard picture">
+                        <h3>10 QUICK TIPS ABOUT BLOGGING</h3>
+                        <p> Possimus ducimus repellendus aut. Quo unde maiores dolorem volu.</p>
+                    </article>
+                    <article class="the-why-content-section__wrapper__article__item">
+                        <img src="../assets/the-why-page/content-section-images/eighth-image.jpg"
+                            alt="keyboard picture">
+                        <h3>10 THINGS NOBODY TOLD YOU ABOUT BEING A WEB DESIGNER</h3>
+                        <p>Aut earum perferendis officiis et. Adipisci voluptatem et dolorem et consequatur quis. Et
+                            velit fugiat quae ex. Est et et aliquid. Voluptatem vero sed voluptas nulla saepe nam nulla
+                            exercitationem. Unde sint quia iusto tem.
+                        </p>
+                    </article>
+                    <article class="the-why-content-section__wrapper__article__item">
+                        <img src="../assets/the-why-page/content-section-images/ninth-image.jpg" alt="keyboard picture">
+                        <h3>10 GREAT EXAMPLES OF RESPONSIVE WEBSITES</h3>
+                        <p>Voluptatem sint distinctio enim aliquid. Unde maxime error impedit excepturi unde fugit
+                            dolorum.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer similar all pages -->
+
+    <footer class="footer__all__pages">
+        <div class="footer__container">
+            <div class="logo__container">
+                <img src="../assets/global-images/footer-images/logo.svg" alt="logo icon">
+            </div>
+            <ul class="footer__links__list first__list">
+                <li><a href="">About us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+
+            </ul>
+            <ul class="footer__links__list second__list">
+                <li><a href="">0800 534 5181</a></li>
+                <li><a href="">info@brilworx.com</a></li>
+            </ul>
+
+            <ul class="footer__info__details__list">
+                <li>Company Reg</li>
+                <li>10663197</li>
+                <li>VAT Reg</li>
+                <li>264115131</li>
+            </ul>
+            <div class="footer__headings__and__social__media">
+                <h3>FOLLOW US</h3>
+                <p>Don't forget to follow our news, updates and activities.</p>
+                <div class="footer__social__media__links__list">
+                    <button class="social-media-btn btn__facebook">
+                        <a href="https://www.facebook.com/brilworx" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__twitter">
+                        <a href="https://twitter.com/brilworx">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__youtube">
+                        <a href="https://www.youtube.com/channel/UCGOYvOrsGLL0nTBzD0mIyGQ" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__google">
+                        <a href="https://plus.google.com/115438248577066943403" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__instagram">
+                        <a href="https://www.instagram.com/brilworx/?hl=en" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__linkedin">
+                        <a href="https://www.linkedin.com/company-beta/17996945/" target="_blank">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

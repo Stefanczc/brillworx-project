@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaw-Dropping Websites --- Brilworx</title>
+    <link rel="stylesheet" href="../styles/global-styles.css">
+    <link rel="shortcut icon" href="../assets/global-images/header-images/favicon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../src/global-logic/header.js" defer></script>
+    <script src="../src/modal-logic/modal.js" defer></script>
+    <script src="../src/main-page-logic/main-page.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="jdheader">
+        <div class="jdheadercontainer">
+            <a href="./main-page.html"><img class="jdnavbarlogo" id="header-logo"
+                    src="../assets/global-images/header-images/navbar-logo.svg" alt="" />
+            </a>
+            <nav class="jdnavbar">
+                <a href="./the-way-page.html">The Way</a>
+                <a href="./the-why-page.html">The Why</a>
+                <a href="./the-us-page.html">The Us</a>
+                <a href="#" id="openModalLink">The How</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Modal -->
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="close-background" id="closeModalBtn">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="form-description">
+                    <h1>CONTACT US</h1>
+                    <h5>Stop blending in with the crowd and start leaving your mark on the web.</h5>
+                    <div class="required-flex">
+                        <p>Required field</p>
+                        <img width="16px" height="16px" src="../assets/modal-images/required-icon.svg" alt="">
+                    </div>
+                    <img src="../assets/modal-images/modal-img.png" alt="">
+                </div>
+                <div class="center-position" id="thankMsg">
+                    <p class="thankMsg">THANK YOU! YOUR MESSAGE HAS BEEN RECEIVED!</p>
+                </div>
+                <form class="modalForm" id="modalForm">
+                    <div class="label-items">
+                        <label for="name">NAME <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt=""></label>
+
+                    </div>
+                    <input type="text" id="name" name="name" required>
+                    <div class="label-items">
+                        <label for="email">EMAIL <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt="">
+                        </label>
+                    </div>
+                    <input type="email" id="email" name="email" required>
+                    <div class="label-items">
+                        <label for="company">COMPANY</label>
+                    </div>
+                    <input type="text" id="company" name="company">
+                    <div class="label-items">
+                        <label for="phone">PHONE NUMBER</label>
+                    </div>
+                    <input type="tel" id="phone" name="phone">
+                    <div class="label-items">
+                        <label for="message">MESSAGE <img width="13px" height="13px"
+                                src="../assets/modal-images/required-icon.svg" alt=""></label>
+                    </div>
+                    <textarea name="message" id="" placeholder="Your message here"></textarea>
+                    <button id="submitBtn" type="submit">SUBMIT MESSAGE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Intro Section -->
+
+        <section class="intro__section__wrapper yellow__section">
+            <div class="intro__section main__page_intro">
+                <div class="intro__section__left__container">
+                    <h6>WELCOME TO BRILWORX</h6>
+                    <h1 class="title__animation" id="title__animation">WE BUILD JAW-DROPPING WEBSITES</h1>
+                    <h5>Creative website design for start-ups, sole traders & settled businesses.</h5>
+                </div>
+                <div class="intro__section__right__container right-container-image">
+                    <img class="main-image" src="../assets/main-page/main-image.png" alt="">
+                </div>
+            </div>
+            <div class="extra-section">
+                <div class="extra-item">
+                    <img src="../assets/main-page/collaborate.svg" alt="">
+                    <h6>COLLABORATE</h6>
+                    <p>Work collaboratively with supportive designers and create your perfect website.</p>
+                    <a href="./the-way-page.html">CHECK OUR WORK</a>
+                </div>
+                <div class="extra-item">
+                    <img src="../assets/main-page/blog.svg" alt="">
+                    <h6>BLOG</h6>
+                    <p>Explore our blogs to educate and accentuate your online presence.</p>
+                    <a href="./the-why-page.html">READ OUR POSTS</a>
+                </div>
+                <div class="extra-item">
+                    <img src="../assets/main-page/contactUs.svg" alt="">
+                    <h6>CONTACT US</h6>
+                    <p>Build customizable packages and get your free quote now.</p>
+                    <a id="contactus-main" href="">ASK FOR A QUOTE</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Way section -->
+
+        <section class="the-way-section">
+            <div class="align__content__sections">
+                <div class="align__content__sections__image__wrapper">
+                    <img class="transform__animation__design" src="../assets/main-page/theWay.svg"
+                        alt="design-pc picture">
+                </div>
+                <div class="web__design__section__description__content">
+                    <h6>OUR PROCESS</h6>
+                    <h2>THE WAY</h2>
+                    <h5>Make the web beautiful.</h5>
+                    <div class="items-container">
+                        <div class="item-container">
+                            <h5>DISCUSS</h5>
+                            <p>Collaboration is key. We want to understand your business and your customers.</p>
+                        </div>
+                        <div class="item-container">
+                            <h5>DESIGN</h5>
+                            <p>We’ll create carefully crafted designs.</p>
+                        </div>
+                        <div class="item-container">
+                            <h5>DELIVER</h5>
+                            <p>Produce a stunning end product.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-aim__section__wrapper blue__section">
+            <div class="our-aim__section features__section">
+                <h6>RESPONSIVE DESIGN</h6>
+                <h2>FEATURES</h2>
+                <h5>Increasingly, people are viewing the web on a variety of devices – tablets, smartphones, and other
+                    mobile devices. If your website doesn’t support them then you could be missing out.
+                </h5>
+                <div class="aims__container">
+                    <div class="aim__container features__container">
+                        <img src="../assets/main-page/mid-section/phone-pic.svg" alt="heart icon">
+                        <h6>MOBILE READY</h6>
+                    </div>
+                    <div class="aim__container features__container">
+                        <img src="../assets/main-page/mid-section/tablet-pic.svg" alt="dialgues icon">
+                        <h6>100% RESPONSIVE</h6>
+                    </div>
+                    <div class="aim__container features__container">
+                        <img src="../assets/main-page/mid-section/laptop-pic.svg" alt="person icon">
+                        <h6>RETINA READY</h6>
+                    </div>
+                    <div class="aim__container features__container">
+                        <img src="../assets/main-page/mid-section/desktop-pic.svg" alt="coffee icon">
+                        <h6>FLEXIBLE DESIGN</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="the-way-section services-section gray__section">
+            <div class="align__content__sections">
+                <div class="align__content__sections__image__wrapper">
+                    <img class="transform__animation__design" src="../assets/main-page/services.svg"
+                        alt="design-pc picture">
+                </div>
+                <div class="web__design__section__description__content">
+                    <h6>WHATEVER YOU NEED</h6>
+                    <h2>SERVICES</h2>
+                    <h5>We want to make your company stand out, because first impressions count.</h5>
+                    <div class="items-container">
+                        <div class="item-container services-container">
+                            <h5>WEB DESIGN</h5>
+                            <p>Always look fresh with sharp designs and stunning layouts.</p>
+                        </div>
+                        <div class="item-container services-container">
+                            <h5>WEB DEVELOPMENT</h5>
+                            <p>Flexible, secure and innovative back end development that makes your site tick.</p>
+                        </div>
+                        <div class="item-container services-container">
+                            <h5>DOMAIN REGISTRATION</h5>
+                            <p>Find the right domain to fit your company</p>
+                        </div>
+                        <div class="item-container services-container">
+                            <h5>HOSTING</h5>
+                            <p>We’ll set up a hosting solution for you to give you peace of mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-us-section yellow__section">
+            <div class="about-us-wrapper">
+                <img src="../assets/main-page/about-us-pic.svg" alt="">
+                <h2>ABOUT US</h2>
+                <p>We work with everyone, big or small, and we want to find the best solution for you.</p>
+                <button id="the-us-btn"><a href="./the-us-page.html">GET TO KNOW US</a></button>
+            </div>
+        </section>
+
+        <section class="the-way-section the-how-section gray__section">
+            <div class="align__content__sections">
+                <div class="align__content__sections__image__wrapper">
+                    <img class="transform__animation__design" src="../assets/main-page/theWay.svg"
+                        alt="design-pc picture">
+                </div>
+                <div class="web__design__section__description__content">
+                    <h6>WHATEVER YOU NEED</h6>
+                    <h2>THE HOW</h2>
+                    <h5>Stop blending in with the crowd and start leaving your mark on the web.</h5>
+                    <button id="the-project-btn">LETS TALK ABOUT YOUR PROJECT</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer for all pages -->
+
+    <footer class="footer__all__pages">
+        <div class="footer__container">
+            <div class="logo__container">
+                <img src="../assets/global-images/footer-images/logo.svg" alt="logo icon">
+            </div>
+            <ul class="footer__links__list first__list">
+                <li><a href="">About us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+
+            </ul>
+            <ul class="footer__links__list second__list">
+                <li><a href="">0800 534 5181</a></li>
+                <li><a href="">info@brilworx.com</a></li>
+            </ul>
+
+            <ul class="footer__info__details__list">
+                <li>Company Reg</li>
+                <li>10663197</li>
+                <li>VAT Reg</li>
+                <li>264115131</li>
+            </ul>
+            <div class="footer__headings__and__social__media">
+                <h3>FOLLOW US</h3>
+                <p>Don't forget to follow our news, updates and activities.</p>
+                <div class="footer__social__media__links__list">
+                    <button class="social-media-btn btn__facebook">
+                        <a href="https://www.facebook.com/brilworx" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__twitter">
+                        <a href="https://twitter.com/brilworx">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__youtube">
+                        <a href="https://www.youtube.com/channel/UCGOYvOrsGLL0nTBzD0mIyGQ" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__google">
+                        <a href="https://plus.google.com/115438248577066943403" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__instagram">
+                        <a href="https://www.instagram.com/brilworx/?hl=en" target="_blank">
+                        </a>
+                    </button>
+                    <button class="social-media-btn btn__linkedin">
+                        <a href="https://www.linkedin.com/company-beta/17996945/" target="_blank">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

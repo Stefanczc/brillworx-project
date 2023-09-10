@@ -1,0 +1,137 @@
+.a-guide-content__section__container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 70rem;
+  position: relative;
+  bottom: 80px;
+  padding: 0 32px;
+}
+
+.a-guide-image__container > img {
+  width: 100%;
+  max-width: 70rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  height: 28rem;
+  object-fit: cover;
+}
+
+.a-guide-image__container {
+  display: flex;
+}
+
+.importance__description__section {
+  flex-basis: 100%;
+}
+
+.text-container {
+  background-color: #fff;
+  padding: 6rem;
+  font-size: 1.398rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.text-container > p {
+  font-family: OpenSans-light;
+  line-height: 1.8em;
+  letter-spacing: -0.01em;
+  margin-bottom: 3rem;
+}
+
+.text-container > p > a {
+  text-decoration: none;
+  color: var(--blue);
+  font-family: OpenSans-light;
+}
+
+.text-container > p > a:hover {
+  color: var(--yellow);
+  font-weight: 600;
+}
+
+.text-container > h2 {
+  margin-bottom: 1rem;
+  color: #20a5e6;
+  font-size: 2.262rem;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+}
+
+.text-container > h3 {
+  color: #20a5e6;
+  margin-bottom: 1rem;
+}
+
+.a-guide__articles__main__container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 70rem;
+  padding: 0 32px;
+}
+
+.a-guide__articles__main__container > h5 {
+  padding: 0 8px;
+  display: inline-block;
+  margin-bottom: 2rem;
+  background-color: #2d2c4c;
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  font-family: OpenSans-light;
+}
+
+.a-guide-wrapper__articles__container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 7%;
+}
+
+.a-guide-article-item-container {
+  max-width: 100%;
+  width: 100%;
+}
+
+.a-guide-article-item-container > img {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 990px) {
+  .a-guide-wrapper__articles__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .a-guide-article-item-container {
+    max-width: 46%;
+    width: 100%;
+  }
+  .text-container {
+    padding: 3rem;
+  }
+  .text-container > p {
+    font-size: 1rem;
+  }
+  .text-container > h2 {
+    font-size: 1.618rem;
+  }
+  .a-guide__articles__main__container > h5 {
+    font-size: 0.864rem;
+    line-height: 1.7em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .a-guide-article-item-container {
+    max-width: 100%;
+  }
+  .a-guide-article-item-container > h3 {
+    min-height: 0;
+  }
+  .a-guide-content__section__container > img {
+    height: 16rem;
+  }
+  .a-guide__articles__main__container {
+    text-align: center;
+  }
+}

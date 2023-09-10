@@ -1,0 +1,130 @@
+/* Import css files */
+
+@import url(../styles/the-way-styles/the-way-intro-section.css);
+@import url(../styles/the-way-styles/the-way-work-section.css);
+@import url(../styles/the-way-styles/the-way-content-section.css);
+@import url(../styles/the-why-styles/the-why-intro-section.css);
+@import url(../styles/the-why-styles/the-why-content-section.css);
+@import url(../styles/the-us-styles/the-us-content-section.css);
+@import url(../styles/footer.css);
+@import url(../styles/a-guide-subpage.styles/intro-section.css);
+@import url(../styles/a-guide-subpage.styles/content-section.css);
+@import url(../styles/the-how-styles/modal.css);
+@import url(../styles/main-page-styles/main-content.css);
+
+/* Import and define fonts */
+@font-face {
+  font-family: Hanken-book;
+  src: url(../assets/global-fonts/Hanken-font/Hanken-Book.ttf);
+}
+@font-face {
+  font-family: Hanken-light;
+  src: url(../assets/global-fonts/Hanken-font/Hanken-Light.ttf);
+}
+@font-face {
+  font-family: OpenSans-medium;
+  src: url(../assets/global-fonts/OpenSans-font/static/OpenSans-Medium.ttf);
+}
+@font-face {
+  font-family: OpenSans-bold;
+  src: url(../assets/global-fonts/OpenSans-font/static/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: OpenSans-light;
+  src: url(../assets/global-fonts/OpenSans-font/static/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: OpenSans-regular;
+  src: url(../assets/global-fonts/OpenSans-font/static/OpenSans-Regular.ttf);
+}
+
+:root {
+  /* sections */
+
+  --yellow: #fcd750;
+  --background-white: #f2f2f2;
+  --light-blue: #bce3f5;
+  --dark-blue: #3898ec;
+  --blue: #20a5e6;
+
+  /* font-color */
+
+  --black: #2d2c4c;
+  --black-clasic: #222;
+  --font-white: #fff;
+}
+
+/* Global styling  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Hanken-light;
+  color: #2d2c4c;
+}
+
+/* Section colors */
+
+.yellow__section {
+  background-color: var(--yellow);
+}
+.blue__section {
+  background-color: var(--light-blue);
+}
+.gray__section {
+  background-color: var(--background-white);
+}
+
+/* Header section */
+
+.jdheader {
+  padding: 32px 0;
+  background-color: var(--yellow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.jdheadercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 70rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0px 32px;
+}
+
+.jdnavbar {
+  display: flex;
+}
+
+.jdnavbarlogo {
+  cursor: pointer;
+}
+
+.jdnavbar a {
+  text-decoration: none;
+  color: var(--black-clasic);
+  margin-left: 32px;
+  transition: 0.2s;
+}
+
+.jdnavbar a:hover {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+a:is(:link, :active, :visited, :hover).active {
+  border-bottom: 2px solid var(--black);
+  font-weight: bold;
+}
+
+.jdnavbar a:last-of-type {
+  border-bottom: none;
+  font-weight: normal;
+}
+/* Footer Section */
